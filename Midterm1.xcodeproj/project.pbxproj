@@ -81,9 +81,9 @@
 		5465BB422333E7050080BF1A = {
 			isa = PBXGroup;
 			children = (
-				5465BB4D2333E7050080BF1A /* Midterm1 */,
-				5465BB662333E7060080BF1A /* Midterm1Tests */,
-				5465BB712333E7060080BF1A /* Midterm1UITests */,
+				5465BB4D2333E7050080BF1A /* GesturePDFViewer */,
+				5465BB662333E7060080BF1A /* GesturePDFViewerTests */,
+				5465BB712333E7060080BF1A /* GesturePDFViewerUITests */,
 				5465BB4C2333E7050080BF1A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,7 +98,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5465BB4D2333E7050080BF1A /* Midterm1 */ = {
+		5465BB4D2333E7050080BF1A /* GesturePDFViewer */ = {
 			isa = PBXGroup;
 			children = (
 				5465BB4E2333E7050080BF1A /* AppDelegate.swift */,
@@ -110,25 +110,25 @@
 				5465BB5B2333E7060080BF1A /* LaunchScreen.storyboard */,
 				5465BB5E2333E7060080BF1A /* Info.plist */,
 			);
-			path = Midterm1;
+			path = GesturePDFViewer;
 			sourceTree = "<group>";
 		};
-		5465BB662333E7060080BF1A /* Midterm1Tests */ = {
+		5465BB662333E7060080BF1A /* GesturePDFViewerTests */ = {
 			isa = PBXGroup;
 			children = (
 				5465BB672333E7060080BF1A /* Midterm1Tests.swift */,
 				5465BB692333E7060080BF1A /* Info.plist */,
 			);
-			path = Midterm1Tests;
+			path = GesturePDFViewerTests;
 			sourceTree = "<group>";
 		};
-		5465BB712333E7060080BF1A /* Midterm1UITests */ = {
+		5465BB712333E7060080BF1A /* GesturePDFViewerUITests */ = {
 			isa = PBXGroup;
 			children = (
 				5465BB722333E7060080BF1A /* Midterm1UITests.swift */,
 				5465BB742333E7060080BF1A /* Info.plist */,
 			);
-			path = Midterm1UITests;
+			path = GesturePDFViewerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
