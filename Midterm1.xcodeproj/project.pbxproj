@@ -6,18 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		5465BB4F2333E7050080BF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5465BB4E2333E7050080BF1A /* AppDelegate.swift */; };
-		5465BB512333E7050080BF1A /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5465BB502333E7050080BF1A /* DocumentBrowserViewController.swift */; };
-		5465BB532333E7050080BF1A /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5465BB522333E7050080BF1A /* DocumentViewController.swift */; };
-		5465BB552333E7050080BF1A /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5465BB542333E7050080BF1A /* Document.swift */; };
-		5465BB582333E7050080BF1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5465BB562333E7050080BF1A /* Main.storyboard */; };
-		5465BB5A2333E7060080BF1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5465BB592333E7060080BF1A /* Assets.xcassets */; };
-		5465BB5D2333E7060080BF1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5465BB5B2333E7060080BF1A /* LaunchScreen.storyboard */; };
-		5465BB682333E7060080BF1A /* Midterm1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5465BB672333E7060080BF1A /* Midterm1Tests.swift */; };
-		5465BB732333E7060080BF1A /* Midterm1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5465BB722333E7060080BF1A /* Midterm1UITests.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		5465BB642333E7060080BF1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -36,21 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5465BB4B2333E7050080BF1A /* Midterm1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Midterm1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5465BB4E2333E7050080BF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5465BB502333E7050080BF1A /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
-		5465BB522333E7050080BF1A /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
-		5465BB542333E7050080BF1A /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
-		5465BB572333E7050080BF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5465BB592333E7060080BF1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5465BB5C2333E7060080BF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5465BB5E2333E7060080BF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5465BB632333E7060080BF1A /* Midterm1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Midterm1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5465BB672333E7060080BF1A /* Midterm1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Midterm1Tests.swift; sourceTree = "<group>"; };
-		5465BB692333E7060080BF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5465BB6E2333E7060080BF1A /* Midterm1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Midterm1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5465BB722333E7060080BF1A /* Midterm1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Midterm1UITests.swift; sourceTree = "<group>"; };
-		5465BB742333E7060080BF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5465BB4B2333E7050080BF1A /* Midterm1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Midterm1.app; path = "/Volumes/Temporary_Storage/ldri225/midterm1-short-straws/build/Debug-iphoneos/Midterm1.app"; sourceTree = "<absolute>"; };
+		5465BB632333E7060080BF1A /* Midterm1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Midterm1Tests.xctest; path = "/Volumes/Temporary_Storage/ldri225/midterm1-short-straws/build/Debug-iphoneos/Midterm1Tests.xctest"; sourceTree = "<absolute>"; };
+		5465BB6E2333E7060080BF1A /* Midterm1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Midterm1UITests.xctest; path = "/Volumes/Temporary_Storage/ldri225/midterm1-short-straws/build/Debug-iphoneos/Midterm1UITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,54 +57,7 @@
 		5465BB422333E7050080BF1A = {
 			isa = PBXGroup;
 			children = (
-				5465BB4D2333E7050080BF1A /* GesturePDFViewer */,
-				5465BB662333E7060080BF1A /* GesturePDFViewerTests */,
-				5465BB712333E7060080BF1A /* GesturePDFViewerUITests */,
-				5465BB4C2333E7050080BF1A /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		5465BB4C2333E7050080BF1A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5465BB4B2333E7050080BF1A /* Midterm1.app */,
-				5465BB632333E7060080BF1A /* Midterm1Tests.xctest */,
-				5465BB6E2333E7060080BF1A /* Midterm1UITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5465BB4D2333E7050080BF1A /* GesturePDFViewer */ = {
-			isa = PBXGroup;
-			children = (
-				5465BB4E2333E7050080BF1A /* AppDelegate.swift */,
-				5465BB502333E7050080BF1A /* DocumentBrowserViewController.swift */,
-				5465BB522333E7050080BF1A /* DocumentViewController.swift */,
-				5465BB542333E7050080BF1A /* Document.swift */,
-				5465BB562333E7050080BF1A /* Main.storyboard */,
-				5465BB592333E7060080BF1A /* Assets.xcassets */,
-				5465BB5B2333E7060080BF1A /* LaunchScreen.storyboard */,
-				5465BB5E2333E7060080BF1A /* Info.plist */,
-			);
-			path = GesturePDFViewer;
-			sourceTree = "<group>";
-		};
-		5465BB662333E7060080BF1A /* GesturePDFViewerTests */ = {
-			isa = PBXGroup;
-			children = (
-				5465BB672333E7060080BF1A /* Midterm1Tests.swift */,
-				5465BB692333E7060080BF1A /* Info.plist */,
-			);
-			path = GesturePDFViewerTests;
-			sourceTree = "<group>";
-		};
-		5465BB712333E7060080BF1A /* GesturePDFViewerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5465BB722333E7060080BF1A /* Midterm1UITests.swift */,
-				5465BB742333E7060080BF1A /* Info.plist */,
-			);
-			path = GesturePDFViewerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +148,7 @@
 				Base,
 			);
 			mainGroup = 5465BB422333E7050080BF1A;
-			productRefGroup = 5465BB4C2333E7050080BF1A /* Products */;
+			productRefGroup = 5465BB422333E7050080BF1A;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -235,9 +164,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5465BB5D2333E7060080BF1A /* LaunchScreen.storyboard in Resources */,
-				5465BB5A2333E7060080BF1A /* Assets.xcassets in Resources */,
-				5465BB582333E7050080BF1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5465BB552333E7050080BF1A /* Document.swift in Sources */,
-				5465BB532333E7050080BF1A /* DocumentViewController.swift in Sources */,
-				5465BB512333E7050080BF1A /* DocumentBrowserViewController.swift in Sources */,
-				5465BB4F2333E7050080BF1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +195,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5465BB682333E7060080BF1A /* Midterm1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5465BB732333E7060080BF1A /* Midterm1UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,25 +219,6 @@
 			targetProxy = 5465BB6F2333E7060080BF1A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5465BB562333E7050080BF1A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5465BB572333E7050080BF1A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5465BB5B2333E7060080BF1A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5465BB5C2333E7060080BF1A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5465BB752333E7060080BF1A /* Debug */ = {
@@ -473,7 +374,6 @@
 		5465BB7B2333E7060080BF1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Midterm1Tests/Info.plist;
@@ -493,7 +393,6 @@
 		5465BB7C2333E7060080BF1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Midterm1Tests/Info.plist;
@@ -513,7 +412,6 @@
 		5465BB7E2333E7060080BF1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Midterm1UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -532,7 +430,6 @@
 		5465BB7F2333E7060080BF1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Midterm1UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
