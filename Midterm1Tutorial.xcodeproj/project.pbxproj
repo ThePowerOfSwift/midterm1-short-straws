@@ -13,6 +13,7 @@
 		12E0E3A02333ECAB00D4A97A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E0E39E2333ECAB00D4A97A /* Main.storyboard */; };
 		12E0E3A22333ECAC00D4A97A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E0E3A12333ECAC00D4A97A /* Assets.xcassets */; };
 		12E0E3A52333ECAC00D4A97A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E0E3A32333ECAC00D4A97A /* LaunchScreen.storyboard */; };
+		12E0E3AD2333EDBF00D4A97A /* example_5s0_hand_model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 12E0E3AC2333EDBF00D4A97A /* example_5s0_hand_model.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		12E0E3A12333ECAC00D4A97A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12E0E3A42333ECAC00D4A97A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12E0E3A62333ECAC00D4A97A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E0E3AC2333EDBF00D4A97A /* example_5s0_hand_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = example_5s0_hand_model.mlmodel; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		12E0E3972333ECAB00D4A97A /* Midterm1Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				12E0E3AC2333EDBF00D4A97A /* example_5s0_hand_model.mlmodel */,
 				12E0E3982333ECAB00D4A97A /* AppDelegate.swift */,
 				12E0E39A2333ECAB00D4A97A /* art.scnassets */,
 				12E0E39C2333ECAB00D4A97A /* ViewController.swift */,
@@ -141,6 +144,7 @@
 			files = (
 				12E0E39D2333ECAB00D4A97A /* ViewController.swift in Sources */,
 				12E0E3992333ECAB00D4A97A /* AppDelegate.swift in Sources */,
+				12E0E3AD2333EDBF00D4A97A /* example_5s0_hand_model.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
