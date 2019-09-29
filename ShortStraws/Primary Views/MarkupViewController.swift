@@ -75,7 +75,7 @@ extension MarkupViewController {
   static func freshController(markup: MarkupDescription? = nil , delegate: MarkupViewControllerDelegate? = nil) -> MarkupViewController {
     let storyboard = UIStoryboard(name: "MarkupViewController", bundle: nil)
     guard let controller = storyboard.instantiateInitialViewController() as? MarkupViewController else {
-      fatalError("Project fault - cant instantiate MarkupViewController from storyboard")
+      fatalError("Project fault - cant instantiate from storyboard")
     }
     controller.delegate = delegate
     controller.currentContent = markup
@@ -220,7 +220,7 @@ extension MarkupViewController {
     if let content = loadDefaultDocument() {
       currentContent = content
     } else {
-      currentContent = ContentDescription(template: BottomAlignedView.name)
+      currentContent = ContentDescription(template: BottomAligned.name)
     }
   }
   
