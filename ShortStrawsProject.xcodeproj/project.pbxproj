@@ -22,14 +22,14 @@
 		37551C0023406E8700DEAF87 /* DocumentBrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BFF23406E8700DEAF87 /* DocumentBrowserDelegate.swift */; };
 		37551C03234070CA00DEAF87 /* MarkupDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551C02234070CA00DEAF87 /* MarkupDocument.swift */; };
 		37551C05234070F700DEAF87 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551C04234070F700DEAF87 /* RootViewController.swift */; };
-		375F27C023411C9700EAB985 /* MarkupFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375F27BA23411C2B00EAB985 /* MarkupFramework.framework */; };
-		375F27C123411C9700EAB985 /* MarkupFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 375F27BA23411C2B00EAB985 /* MarkupFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		375B7B9B23411E5C0051E715 /* MarkupFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375B7B9A23411E4E0051E715 /* MarkupFramework.framework */; };
+		375B7B9C23411E5C0051E715 /* MarkupFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 375B7B9A23411E4E0051E715 /* MarkupFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		375F27B923411C2B00EAB985 /* PBXContainerItemProxy */ = {
+		375B7B9923411E4E0051E715 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 375F27B523411C2B00EAB985 /* MarkupFramework.xcodeproj */;
+			containerPortal = 375B7B9523411E4E0051E715 /* MarkupFramework.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 375F277F2341182200EAB985;
 			remoteInfo = MarkupFramework;
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				375F27C123411C9700EAB985 /* MarkupFramework.framework in Embed Frameworks */,
+				375B7B9C23411E5C0051E715 /* MarkupFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,7 +68,7 @@
 		37551BFF23406E8700DEAF87 /* DocumentBrowserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserDelegate.swift; sourceTree = "<group>"; };
 		37551C02234070CA00DEAF87 /* MarkupDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupDocument.swift; sourceTree = "<group>"; };
 		37551C04234070F700DEAF87 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		375F27B523411C2B00EAB985 /* MarkupFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MarkupFramework.xcodeproj; path = ../MarkupFramework/MarkupFramework.xcodeproj; sourceTree = "<group>"; };
+		375B7B9523411E4E0051E715 /* MarkupFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MarkupFramework.xcodeproj; path = MarkupFramework/MarkupFramework.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				375F27C023411C9700EAB985 /* MarkupFramework.framework in Frameworks */,
+				375B7B9B23411E5C0051E715 /* MarkupFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +148,7 @@
 		37551BCF23405A9E00DEAF87 = {
 			isa = PBXGroup;
 			children = (
-				375F27B523411C2B00EAB985 /* MarkupFramework.xcodeproj */,
+				375B7B9523411E4E0051E715 /* MarkupFramework.xcodeproj */,
 				3742CF79234104B500B05D41 /* Default-568h@2x.png */,
 				3742CF722341036100B05D41 /* ShortStraws */,
 				37551BD923405A9E00DEAF87 /* Products */,
@@ -164,10 +164,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		375F27B623411C2B00EAB985 /* Products */ = {
+		375B7B9623411E4E0051E715 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				375F27BA23411C2B00EAB985 /* MarkupFramework.framework */,
+				375B7B9A23411E4E0051E715 /* MarkupFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,8 +228,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 375F27B623411C2B00EAB985 /* Products */;
-					ProjectRef = 375F27B523411C2B00EAB985 /* MarkupFramework.xcodeproj */;
+					ProductGroup = 375B7B9623411E4E0051E715 /* Products */;
+					ProjectRef = 375B7B9523411E4E0051E715 /* MarkupFramework.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -240,11 +240,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		375F27BA23411C2B00EAB985 /* MarkupFramework.framework */ = {
+		375B7B9A23411E4E0051E715 /* MarkupFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = MarkupFramework.framework;
-			remoteRef = 375F27B923411C2B00EAB985 /* PBXContainerItemProxy */;
+			remoteRef = 375B7B9923411E4E0051E715 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
