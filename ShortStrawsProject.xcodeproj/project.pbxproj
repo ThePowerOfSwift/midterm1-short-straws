@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3742CF71234102A300B05D41 /* MarkupFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3742CF70234102A200B05D41 /* MarkupFramework.framework */; };
+		3742CF74234103A500B05D41 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3742CF73234103A500B05D41 /* Info.plist */; };
+		3742CF7A234104B500B05D41 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3742CF79234104B500B05D41 /* Default-568h@2x.png */; };
+		3742CF7F2341065A00B05D41 /* MarkupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742CF7E2341065A00B05D41 /* MarkupViewController.swift */; };
+		3742CF812341083C00B05D41 /* MarkupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3742CF802341083C00B05D41 /* MarkupViewController.storyboard */; };
+		3742CF8623410FA000B05D41 /* ContentDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742CF8523410FA000B05D41 /* ContentDescription.swift */; };
+		3742CF8823410FDB00B05D41 /* MarkupDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742CF8723410FDB00B05D41 /* MarkupDescription.swift */; };
 		37551BDC23405A9E00DEAF87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BDB23405A9E00DEAF87 /* AppDelegate.swift */; };
 		37551BDE23405A9E00DEAF87 /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BDD23405A9E00DEAF87 /* DocumentBrowserViewController.swift */; };
 		37551BE023405A9E00DEAF87 /* DocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BDF23405A9E00DEAF87 /* DocumentView.swift */; };
-		37551BE223405A9E00DEAF87 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BE123405A9E00DEAF87 /* Document.swift */; };
 		37551BE523405A9E00DEAF87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37551BE323405A9E00DEAF87 /* Main.storyboard */; };
 		37551BE723405AA000DEAF87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37551BE623405AA000DEAF87 /* Assets.xcassets */; };
 		37551BEA23405AA000DEAF87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37551BE823405AA000DEAF87 /* LaunchScreen.storyboard */; };
-		37551BF223405B8900DEAF87 /* MarkupDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BF123405B8900DEAF87 /* MarkupDescription.swift */; };
-		37551BF623405D5400DEAF87 /* ContentDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BF523405D5400DEAF87 /* ContentDescription.swift */; };
 		37551BF823406BC200DEAF87 /* ImagingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BF723406BC200DEAF87 /* ImagingHelper.swift */; };
 		37551BFA23406C0A00DEAF87 /* ImagingHelper+ResourceLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BF923406C0A00DEAF87 /* ImagingHelper+ResourceLoad.swift */; };
 		37551BFC23406D4600DEAF87 /* UIView+LayoutHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BFB23406D4600DEAF87 /* UIView+LayoutHelp.swift */; };
@@ -26,23 +30,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3742CF70234102A200B05D41 /* MarkupFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MarkupFramework.framework; sourceTree = "<group>"; };
+		3742CF73234103A500B05D41 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3742CF79234104B500B05D41 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3742CF7E2341065A00B05D41 /* MarkupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupViewController.swift; sourceTree = "<group>"; };
+		3742CF802341083C00B05D41 /* MarkupViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MarkupViewController.storyboard; path = "../../../Downloads/Markup-Resources/Markup-starter/Markup/Primary Views/MarkupViewController.storyboard"; sourceTree = "<group>"; };
+		3742CF8523410FA000B05D41 /* ContentDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDescription.swift; sourceTree = "<group>"; };
+		3742CF8723410FDB00B05D41 /* MarkupDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupDescription.swift; sourceTree = "<group>"; };
 		37551BD823405A9E00DEAF87 /* ShortStrawsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortStrawsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37551BDB23405A9E00DEAF87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37551BDD23405A9E00DEAF87 /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
 		37551BDF23405A9E00DEAF87 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
-		37551BE123405A9E00DEAF87 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		37551BE423405A9E00DEAF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37551BE623405AA000DEAF87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37551BE923405AA000DEAF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		37551BEB23405AA000DEAF87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37551BF123405B8900DEAF87 /* MarkupDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupDescription.swift; sourceTree = "<group>"; };
-		37551BF523405D5400DEAF87 /* ContentDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDescription.swift; sourceTree = "<group>"; };
 		37551BF723406BC200DEAF87 /* ImagingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagingHelper.swift; sourceTree = "<group>"; };
 		37551BF923406C0A00DEAF87 /* ImagingHelper+ResourceLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagingHelper+ResourceLoad.swift"; sourceTree = "<group>"; };
 		37551BFB23406D4600DEAF87 /* UIView+LayoutHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutHelp.swift"; sourceTree = "<group>"; };
 		37551BFD23406E0A00DEAF87 /* UIApplication+Directories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Directories.swift"; sourceTree = "<group>"; };
 		37551BFF23406E8700DEAF87 /* DocumentBrowserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserDelegate.swift; sourceTree = "<group>"; };
-		37551C012340701600DEAF87 /* MarkupFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkupFramework.h; sourceTree = "<group>"; };
 		37551C02234070CA00DEAF87 /* MarkupDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupDocument.swift; sourceTree = "<group>"; };
 		37551C04234070F700DEAF87 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,20 +58,106 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3742CF71234102A300B05D41 /* MarkupFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3742CF722341036100B05D41 /* ShortStraws */ = {
+			isa = PBXGroup;
+			children = (
+				3742CF75234103C100B05D41 /* Resources */,
+				3742CF7B234104DC00B05D41 /* Primary Views */,
+				3742CF782341048800B05D41 /* UIDocument Mechanics */,
+				3742CF772341040300B05D41 /* Helpers */,
+				3742CF76234103ED00B05D41 /* Infrastructure */,
+				3742CF73234103A500B05D41 /* Info.plist */,
+			);
+			path = ShortStraws;
+			sourceTree = "<group>";
+		};
+		3742CF75234103C100B05D41 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37551BE623405AA000DEAF87 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3742CF76234103ED00B05D41 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				37551BDB23405A9E00DEAF87 /* AppDelegate.swift */,
+				37551C02234070CA00DEAF87 /* MarkupDocument.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3742CF772341040300B05D41 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37551BF723406BC200DEAF87 /* ImagingHelper.swift */,
+				37551BF923406C0A00DEAF87 /* ImagingHelper+ResourceLoad.swift */,
+				37551BFB23406D4600DEAF87 /* UIView+LayoutHelp.swift */,
+				37551BFD23406E0A00DEAF87 /* UIApplication+Directories.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3742CF782341048800B05D41 /* UIDocument Mechanics */ = {
+			isa = PBXGroup;
+			children = (
+				37551BDD23405A9E00DEAF87 /* DocumentBrowserViewController.swift */,
+				37551BDF23405A9E00DEAF87 /* DocumentView.swift */,
+				37551BFF23406E8700DEAF87 /* DocumentBrowserDelegate.swift */,
+			);
+			path = "UIDocument Mechanics";
+			sourceTree = "<group>";
+		};
+		3742CF7B234104DC00B05D41 /* Primary Views */ = {
+			isa = PBXGroup;
+			children = (
+				3742CF802341083C00B05D41 /* MarkupViewController.storyboard */,
+				3742CF7E2341065A00B05D41 /* MarkupViewController.swift */,
+				37551C04234070F700DEAF87 /* RootViewController.swift */,
+				37551BE323405A9E00DEAF87 /* Main.storyboard */,
+			);
+			path = "Primary Views";
+			sourceTree = "<group>";
+		};
+		3742CF8223410F7300B05D41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3742CF8723410FDB00B05D41 /* MarkupDescription.swift */,
+				3742CF8523410FA000B05D41 /* ContentDescription.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3742CF8323410F7900B05D41 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3742CF8423410F7F00B05D41 /* Plugin Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Plugin Views";
+			sourceTree = "<group>";
+		};
 		37551BCF23405A9E00DEAF87 = {
 			isa = PBXGroup;
 			children = (
-				37551C04234070F700DEAF87 /* RootViewController.swift */,
-				37551C02234070CA00DEAF87 /* MarkupDocument.swift */,
+				3742CF79234104B500B05D41 /* Default-568h@2x.png */,
+				3742CF722341036100B05D41 /* ShortStraws */,
 				37551BDA23405A9E00DEAF87 /* ShortStrawsProject */,
-				37551BF323405CA600DEAF87 /* ShortStrawsProject Framework */,
 				37551BD923405A9E00DEAF87 /* Products */,
+				3742CF70234102A200B05D41 /* MarkupFramework.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,39 +172,12 @@
 		37551BDA23405A9E00DEAF87 /* ShortStrawsProject */ = {
 			isa = PBXGroup;
 			children = (
-				37551BF923406C0A00DEAF87 /* ImagingHelper+ResourceLoad.swift */,
-				37551BF723406BC200DEAF87 /* ImagingHelper.swift */,
-				37551BDB23405A9E00DEAF87 /* AppDelegate.swift */,
-				37551BDD23405A9E00DEAF87 /* DocumentBrowserViewController.swift */,
-				37551BDF23405A9E00DEAF87 /* DocumentView.swift */,
-				37551BE123405A9E00DEAF87 /* Document.swift */,
-				37551BE323405A9E00DEAF87 /* Main.storyboard */,
-				37551BE623405AA000DEAF87 /* Assets.xcassets */,
+				3742CF8223410F7300B05D41 /* Model */,
+				3742CF8323410F7900B05D41 /* Helpers */,
+				3742CF8423410F7F00B05D41 /* Plugin Views */,
 				37551BE823405AA000DEAF87 /* LaunchScreen.storyboard */,
-				37551BEB23405AA000DEAF87 /* Info.plist */,
-				37551C012340701600DEAF87 /* MarkupFramework.h */,
-				37551BFB23406D4600DEAF87 /* UIView+LayoutHelp.swift */,
-				37551BFD23406E0A00DEAF87 /* UIApplication+Directories.swift */,
-				37551BFF23406E8700DEAF87 /* DocumentBrowserDelegate.swift */,
 			);
 			path = ShortStrawsProject;
-			sourceTree = "<group>";
-		};
-		37551BF323405CA600DEAF87 /* ShortStrawsProject Framework */ = {
-			isa = PBXGroup;
-			children = (
-				37551BF423405CB100DEAF87 /* Model */,
-			);
-			path = "ShortStrawsProject Framework";
-			sourceTree = "<group>";
-		};
-		37551BF423405CB100DEAF87 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				37551BF123405B8900DEAF87 /* MarkupDescription.swift */,
-				37551BF523405D5400DEAF87 /* ContentDescription.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +238,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3742CF74234103A500B05D41 /* Info.plist in Resources */,
 				37551BEA23405AA000DEAF87 /* LaunchScreen.storyboard in Resources */,
 				37551BE723405AA000DEAF87 /* Assets.xcassets in Resources */,
+				3742CF7A234104B500B05D41 /* Default-568h@2x.png in Resources */,
 				37551BE523405A9E00DEAF87 /* Main.storyboard in Resources */,
+				3742CF812341083C00B05D41 /* MarkupViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,18 +254,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3742CF7F2341065A00B05D41 /* MarkupViewController.swift in Sources */,
 				37551BFE23406E0A00DEAF87 /* UIApplication+Directories.swift in Sources */,
-				37551BE223405A9E00DEAF87 /* Document.swift in Sources */,
 				37551C03234070CA00DEAF87 /* MarkupDocument.swift in Sources */,
 				37551BDE23405A9E00DEAF87 /* DocumentBrowserViewController.swift in Sources */,
 				37551C05234070F700DEAF87 /* RootViewController.swift in Sources */,
 				37551BE023405A9E00DEAF87 /* DocumentView.swift in Sources */,
-				37551BF223405B8900DEAF87 /* MarkupDescription.swift in Sources */,
 				37551BFA23406C0A00DEAF87 /* ImagingHelper+ResourceLoad.swift in Sources */,
 				37551BF823406BC200DEAF87 /* ImagingHelper.swift in Sources */,
-				37551BF623405D5400DEAF87 /* ContentDescription.swift in Sources */,
+				3742CF8823410FDB00B05D41 /* MarkupDescription.swift in Sources */,
 				37551C0023406E8700DEAF87 /* DocumentBrowserDelegate.swift in Sources */,
 				37551BFC23406D4600DEAF87 /* UIView+LayoutHelp.swift in Sources */,
+				3742CF8623410FA000B05D41 /* ContentDescription.swift in Sources */,
 				37551BDC23405A9E00DEAF87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +411,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ShortStrawsProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -360,6 +432,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ShortStrawsProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,0 +1,11 @@
+framework module MarkupFramework {
+  umbrella header "MarkupFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module MarkupFramework.Swift {
+    header "MarkupFramework-Swift.h"
+    requires objc
+}

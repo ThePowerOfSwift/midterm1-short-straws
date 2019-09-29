@@ -28,6 +28,7 @@ public class ImagingHelper: NSObject {
     public func pickImage() {
         requestPermission()
     }
+    
 }
     
     private extension ImagingHelper {
@@ -40,20 +41,22 @@ public class ImagingHelper: NSObject {
                 
                 switch cameraAuthorizationStatus {
                 case .denied:
-                    break
+                  break
                 case .restricted:
-                    break
+                  break
                 case .authorized:
-                    cameraIsUserPermitted = true
+                  cameraIsUserPermitted = true
                     
                 case .notDetermined:
-                    doChooseSource = true
+                    doChooseSource = false
                     AVCaptureDevice.requestAccess(for: cameraMediaType) { granted in
                         if granted{
                             self.cameraIsUserPermitted = true
                         }
                         self.chooseSource()
                     }
+                @unknown default:
+                    <#fatalError()#>
                 }
             }
             
