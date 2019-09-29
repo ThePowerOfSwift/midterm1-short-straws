@@ -11,6 +11,10 @@
 		375F278C2341186000EAB985 /* MarkupDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F278B2341186000EAB985 /* MarkupDescription.swift */; };
 		375F278E2341187D00EAB985 /* ContentDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F278D2341187D00EAB985 /* ContentDescription.swift */; };
 		375F2790234118D000EAB985 /* String+NS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F278F234118D000EAB985 /* String+NS.swift */; };
+		37EEF24023414DFB0039811B /* BottomAlignedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EEF23F23414DFB0039811B /* BottomAlignedView.swift */; };
+		37EEF24223414E160039811B /* PluginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EEF24123414E160039811B /* PluginView.swift */; };
+		37EEF24423414E2B0039811B /* PluginViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EEF24323414E2B0039811B /* PluginViewFactory.swift */; };
+		37EEF24623414E3D0039811B /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EEF24523414E3D0039811B /* Plugin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,11 @@
 		375F278B2341186000EAB985 /* MarkupDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupDescription.swift; sourceTree = "<group>"; };
 		375F278D2341187D00EAB985 /* ContentDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDescription.swift; sourceTree = "<group>"; };
 		375F278F234118D000EAB985 /* String+NS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+NS.swift"; sourceTree = "<group>"; };
+		37EEF23F23414DFB0039811B /* BottomAlignedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomAlignedView.swift; sourceTree = "<group>"; };
+		37EEF24123414E160039811B /* PluginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginView.swift; sourceTree = "<group>"; };
+		37EEF24323414E2B0039811B /* PluginViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginViewFactory.swift; sourceTree = "<group>"; };
+		37EEF24523414E3D0039811B /* Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
+		37EEF24723414EBC0039811B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				375F27822341182200EAB985 /* MarkupFramework.h */,
+				37EEF24723414EBC0039811B /* Info.plist */,
+				37EEF23F23414DFB0039811B /* BottomAlignedView.swift */,
+				37EEF24123414E160039811B /* PluginView.swift */,
+				37EEF24323414E2B0039811B /* PluginViewFactory.swift */,
+				37EEF24523414E3D0039811B /* Plugin.swift */,
 			);
 			path = "Plugin Views";
 			sourceTree = "<group>";
@@ -167,6 +181,10 @@
 			files = (
 				375F278E2341187D00EAB985 /* ContentDescription.swift in Sources */,
 				375F2790234118D000EAB985 /* String+NS.swift in Sources */,
+				37EEF24623414E3D0039811B /* Plugin.swift in Sources */,
+				37EEF24423414E2B0039811B /* PluginViewFactory.swift in Sources */,
+				37EEF24223414E160039811B /* PluginView.swift in Sources */,
+				37EEF24023414DFB0039811B /* BottomAlignedView.swift in Sources */,
 				375F278C2341186000EAB985 /* MarkupDescription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

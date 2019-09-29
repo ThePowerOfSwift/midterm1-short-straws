@@ -14,7 +14,7 @@ protocol MarkupViewControllerDelegate: class {
   func markupEditorDidUpdateContent(_ controller:MarkupViewController, markup: MarkupDescription)
 }
 
-class MarkupViewController: UIViewController{
+class MarkupViewController: UIViewController {
   
   @IBOutlet weak var chooseImageButton: UIButton!
   @IBOutlet weak var titleField: UITextField!
@@ -29,7 +29,7 @@ class MarkupViewController: UIViewController{
       loadCurrentContent()
     }
   }
-  var currentTemplate: PluginView?
+    var currentTemplate: PluginView?
   var delegate: MarkupViewControllerDelegate?
   
   @IBAction func chooseImageAction(_ sender: Any) {
@@ -75,7 +75,7 @@ extension MarkupViewController {
   static func freshController(markup: MarkupDescription? = nil , delegate: MarkupViewControllerDelegate? = nil) -> MarkupViewController {
     let storyboard = UIStoryboard(name: "MarkupViewController", bundle: nil)
     guard let controller = storyboard.instantiateInitialViewController() as? MarkupViewController else {
-      fatalError("Project fault - cant instantiate from storyboard")
+      fatalError("Project fault - cant instantiate MarkupViewController from storyboard")
     }
     controller.delegate = delegate
     controller.currentContent = markup
@@ -153,7 +153,7 @@ extension MarkupViewController: UIImagePickerControllerDelegate {
 }
 
 extension MarkupViewController: UINavigationControllerDelegate {
-
+  //ImagingHelper conformance only
 }
 
 extension MarkupViewController {
@@ -220,7 +220,7 @@ extension MarkupViewController {
     if let content = loadDefaultDocument() {
       currentContent = content
     } else {
-      currentContent = ContentDescription(template: BottomAligned.name)
+      currentContent = ContentDescription(template: BottomAlignedView.name)
     }
   }
   

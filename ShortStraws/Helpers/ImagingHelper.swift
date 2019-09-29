@@ -48,6 +48,7 @@ private extension ImagingHelper {
         cameraIsUserPermitted = true
         
       case .notDetermined:
+        // Prompting user for the permission to use the camera.
         doChooseSource = false
         AVCaptureDevice.requestAccess(for: cameraMediaType) { granted in
           if granted {

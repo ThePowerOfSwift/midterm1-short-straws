@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		3742CF7A234104B500B05D41 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3742CF79234104B500B05D41 /* Default-568h@2x.png */; };
 		3742CF7F2341065A00B05D41 /* MarkupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742CF7E2341065A00B05D41 /* MarkupViewController.swift */; };
-		3742CF812341083C00B05D41 /* MarkupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3742CF802341083C00B05D41 /* MarkupViewController.storyboard */; };
 		37551BDC23405A9E00DEAF87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BDB23405A9E00DEAF87 /* AppDelegate.swift */; };
 		37551BDE23405A9E00DEAF87 /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BDD23405A9E00DEAF87 /* DocumentBrowserViewController.swift */; };
 		37551BE023405A9E00DEAF87 /* DocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BDF23405A9E00DEAF87 /* DocumentView.swift */; };
 		37551BE523405A9E00DEAF87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37551BE323405A9E00DEAF87 /* Main.storyboard */; };
-		37551BE723405AA000DEAF87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37551BE623405AA000DEAF87 /* Assets.xcassets */; };
 		37551BF823406BC200DEAF87 /* ImagingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BF723406BC200DEAF87 /* ImagingHelper.swift */; };
 		37551BFA23406C0A00DEAF87 /* ImagingHelper+ResourceLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BF923406C0A00DEAF87 /* ImagingHelper+ResourceLoad.swift */; };
 		37551BFC23406D4600DEAF87 /* UIView+LayoutHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BFB23406D4600DEAF87 /* UIView+LayoutHelp.swift */; };
@@ -24,6 +22,9 @@
 		37551C05234070F700DEAF87 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551C04234070F700DEAF87 /* RootViewController.swift */; };
 		375B7B9B23411E5C0051E715 /* MarkupFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375B7B9A23411E4E0051E715 /* MarkupFramework.framework */; };
 		375B7B9C23411E5C0051E715 /* MarkupFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 375B7B9A23411E4E0051E715 /* MarkupFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37EEF23323414A9F0039811B /* MarkupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EEF23223414A9F0039811B /* MarkupViewController.storyboard */; };
+		37EEF24B23414FA80039811B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EEF24923414FA80039811B /* Assets.xcassets */; };
+		37EEF24C23414FA80039811B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EEF24A23414FA80039811B /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,16 +52,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3742CF73234103A500B05D41 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3742CF73234103A500B05D41 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../MarkupFramework/MarkupFramework/Plugin Views/Info.plist"; sourceTree = "<group>"; };
 		3742CF79234104B500B05D41 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3742CF7E2341065A00B05D41 /* MarkupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupViewController.swift; sourceTree = "<group>"; };
-		3742CF802341083C00B05D41 /* MarkupViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MarkupViewController.storyboard; path = "../../../Downloads/Markup-Resources/Markup-starter/Markup/Primary Views/MarkupViewController.storyboard"; sourceTree = "<group>"; };
 		37551BD823405A9E00DEAF87 /* ShortStrawsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortStrawsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37551BDB23405A9E00DEAF87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37551BDD23405A9E00DEAF87 /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
 		37551BDF23405A9E00DEAF87 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
 		37551BE423405A9E00DEAF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		37551BE623405AA000DEAF87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37551BF723406BC200DEAF87 /* ImagingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagingHelper.swift; sourceTree = "<group>"; };
 		37551BF923406C0A00DEAF87 /* ImagingHelper+ResourceLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagingHelper+ResourceLoad.swift"; sourceTree = "<group>"; };
 		37551BFB23406D4600DEAF87 /* UIView+LayoutHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutHelp.swift"; sourceTree = "<group>"; };
@@ -69,6 +68,10 @@
 		37551C02234070CA00DEAF87 /* MarkupDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupDocument.swift; sourceTree = "<group>"; };
 		37551C04234070F700DEAF87 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		375B7B9523411E4E0051E715 /* MarkupFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MarkupFramework.xcodeproj; path = MarkupFramework/MarkupFramework.xcodeproj; sourceTree = "<group>"; };
+		37EEF23223414A9F0039811B /* MarkupViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MarkupViewController.storyboard; sourceTree = "<group>"; };
+		37EEF24823414EBF0039811B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "MarkupFramework/MarkupFramework/Plugin Views/../../../Info.plist"; sourceTree = "<group>"; };
+		37EEF24923414FA80039811B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37EEF24A23414FA80039811B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +102,8 @@
 		3742CF75234103C100B05D41 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				37551BE623405AA000DEAF87 /* Assets.xcassets */,
+				37EEF24923414FA80039811B /* Assets.xcassets */,
+				37EEF24A23414FA80039811B /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -137,7 +141,7 @@
 		3742CF7B234104DC00B05D41 /* Primary Views */ = {
 			isa = PBXGroup;
 			children = (
-				3742CF802341083C00B05D41 /* MarkupViewController.storyboard */,
+				37EEF23223414A9F0039811B /* MarkupViewController.storyboard */,
 				3742CF7E2341065A00B05D41 /* MarkupViewController.swift */,
 				37551C04234070F700DEAF87 /* RootViewController.swift */,
 				37551BE323405A9E00DEAF87 /* Main.storyboard */,
@@ -148,6 +152,7 @@
 		37551BCF23405A9E00DEAF87 = {
 			isa = PBXGroup;
 			children = (
+				37EEF24823414EBF0039811B /* Info.plist */,
 				375B7B9523411E4E0051E715 /* MarkupFramework.xcodeproj */,
 				3742CF79234104B500B05D41 /* Default-568h@2x.png */,
 				3742CF722341036100B05D41 /* ShortStraws */,
@@ -254,10 +259,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37551BE723405AA000DEAF87 /* Assets.xcassets in Resources */,
+				37EEF24C23414FA80039811B /* Colors.xcassets in Resources */,
+				37EEF23323414A9F0039811B /* MarkupViewController.storyboard in Resources */,
 				3742CF7A234104B500B05D41 /* Default-568h@2x.png in Resources */,
+				37EEF24B23414FA80039811B /* Assets.xcassets in Resources */,
 				37551BE523405A9E00DEAF87 /* Main.storyboard in Resources */,
-				3742CF812341083C00B05D41 /* MarkupViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +425,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = ShortStrawsProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +446,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = ShortStrawsProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
