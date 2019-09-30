@@ -52,7 +52,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3742CF73234103A500B05D41 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../MarkupFramework/MarkupFramework/Plugin Views/Info.plist"; sourceTree = "<group>"; };
 		3742CF79234104B500B05D41 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3742CF7E2341065A00B05D41 /* MarkupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupViewController.swift; sourceTree = "<group>"; };
 		37551BD823405A9E00DEAF87 /* ShortStrawsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortStrawsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +93,6 @@
 				3742CF782341048800B05D41 /* UIDocument Mechanics */,
 				3742CF772341040300B05D41 /* Helpers */,
 				3742CF76234103ED00B05D41 /* Infrastructure */,
-				3742CF73234103A500B05D41 /* Info.plist */,
 			);
 			path = ShortStraws;
 			sourceTree = "<group>";
