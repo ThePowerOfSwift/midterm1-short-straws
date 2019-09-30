@@ -88,7 +88,7 @@ extension MarkupViewController {
   func loadTemplate(_ content: MarkupDescription) {
     
     let template = PluginViewFactory.plugin(named: content.template)
-    templateContainer.pinToinside(view: template.view)
+    templateContainer.pinToInside(view: template.view)
     
     currentTemplate = template
     currentContent = content
