@@ -53,6 +53,27 @@ class MarkupDocument: UIDocument {
     }
     return data
   }
+    
   override func load(fromContents contents: Any, ofType typeName: String?) throws {
+    // Confirms that contents are of Data
+    guard let data = contents as? Data else {
+        throw DocumentError.unrecognizedContent
+    }
+    
+    let unarchiver: NSKeyedArchiver
+    do{
+        unarchiver = try NSKeyedArchiver(forReadingFrom: data)
+    } catch {
+        throw DocumentError.corruptDocument
+    }
+    unarchiver.requiringSecureCoding = false
+    // Decode data as ContentDescription using NSKeyedArchiver
+    let decodedContent = unarchiver.decodeObject(of: ContentDescription.self, forKey: NSKeyedArchiveRootObjectKey)
+    
+    guard let content = decodedContent else{
+        throw DocumentError.corruptDocument
+    }
+    // Store the object so it is ready to be used elsewhere
+    markup = content
   }
 }
