@@ -35,6 +35,13 @@
 			remoteGlobalIDString = 375F277F2341182200EAB985;
 			remoteInfo = MarkupFramework;
 		};
+		6FC648CC23426378005437A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 375B7B9523411E4E0051E715 /* MarkupFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6FC648BF2342630A005437A8;
+			remoteInfo = ShortStrawThumbnail;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,10 +56,19 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6FC648B823426130005437A8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3742CF73234103A500B05D41 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../MarkupFramework/MarkupFramework/Plugin Views/Info.plist"; sourceTree = "<group>"; };
 		3742CF79234104B500B05D41 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3742CF7E2341065A00B05D41 /* MarkupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkupViewController.swift; sourceTree = "<group>"; };
 		37551BD823405A9E00DEAF87 /* ShortStrawsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortStrawsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +88,7 @@
 		37EEF24823414EBF0039811B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "MarkupFramework/MarkupFramework/Plugin Views/../../../Info.plist"; sourceTree = "<group>"; };
 		37EEF24923414FA80039811B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37EEF24A23414FA80039811B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		6FC648AC23426130005437A8 /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +111,6 @@
 				3742CF782341048800B05D41 /* UIDocument Mechanics */,
 				3742CF772341040300B05D41 /* Helpers */,
 				3742CF76234103ED00B05D41 /* Infrastructure */,
-				3742CF73234103A500B05D41 /* Info.plist */,
 			);
 			path = ShortStraws;
 			sourceTree = "<group>";
@@ -152,10 +168,10 @@
 		37551BCF23405A9E00DEAF87 = {
 			isa = PBXGroup;
 			children = (
-				37EEF24823414EBF0039811B /* Info.plist */,
 				375B7B9523411E4E0051E715 /* MarkupFramework.xcodeproj */,
 				3742CF79234104B500B05D41 /* Default-568h@2x.png */,
 				3742CF722341036100B05D41 /* ShortStraws */,
+				37EEF24823414EBF0039811B /* Info.plist */,
 				37551BD923405A9E00DEAF87 /* Products */,
 				375F27BB23411C5000EAB985 /* Frameworks */,
 			);
@@ -173,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				375B7B9A23411E4E0051E715 /* MarkupFramework.framework */,
+				6FC648CD23426378005437A8 /* ShortStrawThumbnail.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +197,7 @@
 		375F27BB23411C5000EAB985 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6FC648AC23426130005437A8 /* QuickLookThumbnailing.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,6 +213,7 @@
 				37551BD523405A9E00DEAF87 /* Frameworks */,
 				37551BD623405A9E00DEAF87 /* Resources */,
 				375F27C223411C9800EAB985 /* Embed Frameworks */,
+				6FC648B823426130005437A8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -250,6 +269,13 @@
 			fileType = wrapper.framework;
 			path = MarkupFramework.framework;
 			remoteRef = 375B7B9923411E4E0051E715 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FC648CD23426378005437A8 /* ShortStrawThumbnail.appex */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.app-extension";
+			path = ShortStrawThumbnail.appex;
+			remoteRef = 6FC648CC23426378005437A8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -419,6 +445,7 @@
 		37551BEF23405AA000DEAF87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -440,6 +467,7 @@
 		37551BF023405AA000DEAF87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (

@@ -15,6 +15,9 @@
 		37EEF24223414E160039811B /* PluginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EEF24123414E160039811B /* PluginView.swift */; };
 		37EEF24423414E2B0039811B /* PluginViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EEF24323414E2B0039811B /* PluginViewFactory.swift */; };
 		37EEF24623414E3D0039811B /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EEF24523414E3D0039811B /* Plugin.swift */; };
+		6FC648C22342630A005437A8 /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC648C12342630A005437A8 /* QuickLookThumbnailing.framework */; };
+		6FC648C52342630A005437A8 /* ThumbnailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC648C42342630A005437A8 /* ThumbnailProvider.swift */; };
+		6FC648CA23426336005437A8 /* MarkupFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375F277F2341182200EAB985 /* MarkupFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,10 @@
 		37EEF24323414E2B0039811B /* PluginViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginViewFactory.swift; sourceTree = "<group>"; };
 		37EEF24523414E3D0039811B /* Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
 		37EEF24723414EBC0039811B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../Info.plist; sourceTree = "<group>"; };
+		6FC648BF2342630A005437A8 /* ShortStrawThumbnail.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShortStrawThumbnail.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC648C12342630A005437A8 /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
+		6FC648C42342630A005437A8 /* ThumbnailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailProvider.swift; sourceTree = "<group>"; };
+		6FC648C62342630A005437A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6FC648BC2342630A005437A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC648C22342630A005437A8 /* QuickLookThumbnailing.framework in Frameworks */,
+				6FC648CA23426336005437A8 /* MarkupFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				375F27812341182200EAB985 /* MarkupFramework */,
+				6FC648C32342630A005437A8 /* ShortStrawThumbnail */,
+				6FC648C02342630A005437A8 /* Frameworks */,
 				375F27802341182200EAB985 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				375F277F2341182200EAB985 /* MarkupFramework.framework */,
+				6FC648BF2342630A005437A8 /* ShortStrawThumbnail.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +118,23 @@
 			path = "Plugin Views";
 			sourceTree = "<group>";
 		};
+		6FC648C02342630A005437A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FC648C12342630A005437A8 /* QuickLookThumbnailing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FC648C32342630A005437A8 /* ShortStrawThumbnail */ = {
+			isa = PBXGroup;
+			children = (
+				6FC648C42342630A005437A8 /* ThumbnailProvider.swift */,
+				6FC648C62342630A005437A8 /* Info.plist */,
+			);
+			path = ShortStrawThumbnail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -131,18 +167,39 @@
 			productReference = 375F277F2341182200EAB985 /* MarkupFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		6FC648BE2342630A005437A8 /* ShortStrawThumbnail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FC648C92342630A005437A8 /* Build configuration list for PBXNativeTarget "ShortStrawThumbnail" */;
+			buildPhases = (
+				6FC648BB2342630A005437A8 /* Sources */,
+				6FC648BC2342630A005437A8 /* Frameworks */,
+				6FC648BD2342630A005437A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShortStrawThumbnail;
+			productName = ShortStrawThumbnail;
+			productReference = 6FC648BF2342630A005437A8 /* ShortStrawThumbnail.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		375F27762341182200EAB985 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Greg Schloemer";
 				TargetAttributes = {
 					375F277E2341182200EAB985 = {
 						CreatedOnToolsVersion = 11.0;
 						LastSwiftMigration = 1100;
+					};
+					6FC648BE2342630A005437A8 = {
+						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
@@ -160,12 +217,20 @@
 			projectRoot = "";
 			targets = (
 				375F277E2341182200EAB985 /* MarkupFramework */,
+				6FC648BE2342630A005437A8 /* ShortStrawThumbnail */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		375F277D2341182200EAB985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC648BD2342630A005437A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -186,6 +251,14 @@
 				37EEF24223414E160039811B /* PluginView.swift in Sources */,
 				37EEF24023414DFB0039811B /* BottomAlignedView.swift in Sources */,
 				375F278C2341186000EAB985 /* MarkupDescription.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC648BB2342630A005437A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC648C52342630A005437A8 /* ThumbnailProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +434,44 @@
 			};
 			name = Release;
 		};
+		6FC648C72342630A005437A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BH9BS3QV7C;
+				INFOPLIST_FILE = ShortStrawThumbnail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ShortStrawThumbnail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FC648C82342630A005437A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BH9BS3QV7C;
+				INFOPLIST_FILE = ShortStrawThumbnail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.ShortStrawThumbnail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -378,6 +489,15 @@
 			buildConfigurations = (
 				375F27882341182200EAB985 /* Debug */,
 				375F27892341182200EAB985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FC648C92342630A005437A8 /* Build configuration list for PBXNativeTarget "ShortStrawThumbnail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FC648C72342630A005437A8 /* Debug */,
+				6FC648C82342630A005437A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

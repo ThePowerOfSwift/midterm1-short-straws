@@ -54,8 +54,7 @@ class MarkupViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    observeAppBackground()
-    loadDocument()
+    loadCurrentContent()
   }
   
   func loadCurrentContent() {
