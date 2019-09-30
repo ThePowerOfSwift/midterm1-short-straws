@@ -128,10 +128,10 @@
 		3742CF782341048800B05D41 /* UIDocument Mechanics */ = {
 			isa = PBXGroup;
 			children = (
+				37551C02234070CA00DEAF87 /* MarkupDocument.swift */,
 				37551BDD23405A9E00DEAF87 /* DocumentBrowserViewController.swift */,
 				37551BDF23405A9E00DEAF87 /* DocumentView.swift */,
 				37551BFF23406E8700DEAF87 /* DocumentBrowserDelegate.swift */,
-				37551C02234070CA00DEAF87 /* MarkupDocument.swift */,
 			);
 			path = "UIDocument Mechanics";
 			sourceTree = "<group>";
