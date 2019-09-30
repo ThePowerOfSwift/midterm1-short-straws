@@ -94,3 +94,38 @@ extension DocumentBrowserViewController: MarkupViewControllerDelegate {
     }
     
 }
+
+extension DocumentBrowserViewController {
+  
+  func openDocument(url: URL) {
+    
+    // Return if the document is already being edited.
+    guard isDocumentCurrentlyOpen(url: url) == false else {
+      return
+    }
+    
+    
+    closeMarkupController {
+      // Open the new document and then open a MarkupViewController.
+      let document = MarkupDocument(fileURL: url)
+      document.open { openSuccess in
+        guard openSuccess else {
+          return
+        }
+        self.currentDocument = document
+        self.displayMarkupController()
+      }
+    }
+  }
+
+  // Check if the document is already open by making a couple of logic checks. This is in a separate method to make the flow of the main method more obvious.
+  private func isDocumentCurrentlyOpen(url: URL) -> Bool {
+    if let document = currentDocument {
+      if document.fileURL == url && document.documentState != .closed  {
+        return true
+      }
+    }
+    return false
+  }
+  
+}
