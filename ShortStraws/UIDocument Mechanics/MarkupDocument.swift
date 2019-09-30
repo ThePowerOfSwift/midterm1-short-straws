@@ -60,13 +60,13 @@ class MarkupDocument: UIDocument {
         throw DocumentError.unrecognizedContent
     }
     
-    let unarchiver: NSKeyedArchiver
+    let unarchiver: NSKeyedUnarchiver
     do{
-        unarchiver = try NSKeyedArchiver(forReadingFrom: data)
+        unarchiver = try NSKeyedUnarchiver(forReadingFrom: data)
     } catch {
         throw DocumentError.corruptDocument
     }
-    unarchiver.requiringSecureCoding = false
+    unarchiver.requiresSecureCoding = false
     // Decode data as ContentDescription using NSKeyedArchiver
     let decodedContent = unarchiver.decodeObject(of: ContentDescription.self, forKey: NSKeyedArchiveRootObjectKey)
     
