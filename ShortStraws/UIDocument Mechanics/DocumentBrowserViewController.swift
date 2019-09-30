@@ -31,6 +31,18 @@ class DocumentBrowserViewController: UIViewController {
     
     func installDocumentBrowser() {
         view.pinToInside(view: documentBrowser.view)
+        // Give the DocumentBrowserDelegate instance a closure to use for presenting the document. If there is an error, ignore it. Otherwise, follow the path and open the document URL.
+        browserDelegate.presentationHandler = { [weak self] url, error in
+          
+          guard error == nil else {
+            //present error to user e.g UIAlertController
+            return
+          }
+          
+          if let url = url, let self = self {
+            self.openDocument(url: url)
+          }
+        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

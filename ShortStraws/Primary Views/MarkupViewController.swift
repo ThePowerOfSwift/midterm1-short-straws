@@ -54,8 +54,8 @@ class MarkupViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    observeAppBackground()
-    loadDocument()
+    // UIDocument handles background retrieval, MarkupDescription injected when loading controller
+    loadCurrentContent()
   }
   
   func loadCurrentContent() {
