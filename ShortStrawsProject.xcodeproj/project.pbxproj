@@ -85,7 +85,7 @@
 		37551C04234070F700DEAF87 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		375B7B9523411E4E0051E715 /* MarkupFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MarkupFramework.xcodeproj; path = MarkupFramework/MarkupFramework.xcodeproj; sourceTree = "<group>"; };
 		37EEF23223414A9F0039811B /* MarkupViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MarkupViewController.storyboard; sourceTree = "<group>"; };
-		37EEF24823414EBF0039811B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "MarkupFramework/MarkupFramework/Plugin Views/../../../Info.plist"; sourceTree = "<group>"; };
+		37EEF24823414EBF0039811B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		37EEF24923414FA80039811B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37EEF24A23414FA80039811B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		6FC648AC23426130005437A8 /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
@@ -106,6 +106,7 @@
 		3742CF722341036100B05D41 /* ShortStraws */ = {
 			isa = PBXGroup;
 			children = (
+				37EEF24823414EBF0039811B /* Info.plist */,
 				3742CF75234103C100B05D41 /* Resources */,
 				3742CF7B234104DC00B05D41 /* Primary Views */,
 				3742CF782341048800B05D41 /* UIDocument Mechanics */,
@@ -171,7 +172,6 @@
 				375B7B9523411E4E0051E715 /* MarkupFramework.xcodeproj */,
 				3742CF79234104B500B05D41 /* Default-568h@2x.png */,
 				3742CF722341036100B05D41 /* ShortStraws */,
-				37EEF24823414EBF0039811B /* Info.plist */,
 				37551BD923405A9E00DEAF87 /* Products */,
 				375F27BB23411C5000EAB985 /* Frameworks */,
 			);
@@ -448,6 +448,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4VZ857S9H8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -457,7 +458,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.uky.cs485g-ss.ShortStrawsProject";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uky.cs485g-ss.ldri225.ShortStrawsProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,6 +471,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4VZ857S9H8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -479,7 +481,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.uky.cs485g-ss.ShortStrawsProject";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uky.cs485g-ss.ldri225.ShortStrawsProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
