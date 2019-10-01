@@ -9,6 +9,7 @@
 import UIKit
 import MarkupFramework
 
+//Defines some Error types for potential failure events
 enum DocumentError: Error {
   case unrecognizedContent
   case corruptDocument
@@ -26,7 +27,17 @@ enum DocumentError: Error {
   }
 }
 
+//MarkupDocument is a subclass of UIDocument
+//UIDocument acts as the abstract base class for the UIDocumentBrowserViewController to
+// work with
+//Contains Methods:
+//  contents - called when saving to get data that represents document
+//  load - called when opening document to supply encoded data
 class MarkupDocument: UIDocument {
+  
+    
+  //Encodes the current contents of the markup propery and returns it to
+  //    UIDocument for saving to the file system
   override func contents(forType typeName: String) throws -> Any {
     let data: Data
     do {
@@ -39,6 +50,10 @@ class MarkupDocument: UIDocument {
     }
     return data
   }
+  
+  // 1. Confirm content is an instance of Data
+  // 2. Decode data as ContentDescription
+  // 3. Store object
   override func load(fromContents contents: Any, ofType typeName: String?) throws {
     // 1
     guard let data = contents as? Data else {
@@ -62,12 +77,12 @@ class MarkupDocument: UIDocument {
     // 3
     markup = content
   }
-    static let defaultTemplateName = BottomAlignedView.name
-    static let filenameExtension = "rwmarkup"
+  static let defaultTemplateName = BottomAlignedView.name
+  static let filenameExtension = "rwmarkup"
 
-    var markup: MarkupDescription = ContentDescription(template: defaultTemplateName) {
-      didSet {
+  var markup: MarkupDescription = ContentDescription(template: defaultTemplateName) {
+    didSet {
         updateChangeCount(.done)
-      }
     }
+  }
 }

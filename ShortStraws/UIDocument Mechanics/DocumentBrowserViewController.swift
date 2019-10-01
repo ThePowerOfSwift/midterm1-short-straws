@@ -10,13 +10,18 @@ import UIKit
 import MarkupFramework
 
 class DocumentBrowserViewController: UIViewController {
+  
+  //Create an instance of DocumentBrowserDelegate
   var browserDelegate = DocumentBrowserDelegate()
   var currentDocument: MarkupDocument?
   var editingDocument = false
+  
+  //Create and configure instance of UIDocumentBrowserViewController
+    //Assign Delegate
   lazy var documentBrowser: UIDocumentBrowserViewController = {
     let browser = UIDocumentBrowserViewController()
     
-    browser.allowsDocumentCreation = true
+    browser.allowsDocumentCreation = true //want to create documents
     browser.browserUserInterfaceStyle = .dark
     browser.view.tintColor = UIColor(named: "RazeGreen") ?? .white
     browser.delegate = browserDelegate

@@ -16,9 +16,12 @@ enum NavigationContext {
 }
 
 class RootViewController: UIViewController {
+    
+  //DocumentBrowserViewController acts as a container for UIDocumentBrowserViewController
   lazy var documentBrowser: DocumentBrowserViewController = {
     return DocumentBrowserViewController()
   }()
+    
   var presentationContext: NavigationContext = .launched
   
   override func viewDidAppear(_ animated: Bool) {
@@ -32,12 +35,11 @@ class RootViewController: UIViewController {
     presenter.present(controller, animated: true)
   }
 
-    func displayDocumentBrowser(inboundURL: URL? = nil, importIfNeeded: Bool = true) {
-      if presentationContext == .launched {
-        
+  func displayDocumentBrowser(inboundURL: URL? = nil, importIfNeeded: Bool = true) {
+    if presentationContext == .launched {
         present(documentBrowser, animated: false)
-      }
-      presentationContext = .browsing
+    }
+    presentationContext = .browsing
       if let inbound = inboundURL {
         documentBrowser.openRemoteDocument(inbound, importIfNeeded: importIfNeeded)
       }
