@@ -80,19 +80,21 @@ class MarkupViewController: UIViewController {
     
 }
 
-// MarkupViewController extension to 
+// MarkupViewController extension to load storyboard MarkupViewController
 extension MarkupViewController {
     static func freshController(markup: MarkupDescription? = nil , delegate: MarkupViewControllerDelegate? = nil) -> MarkupViewController {
         let storyboard = UIStoryboard(name: "MarkupViewController", bundle: nil)
         guard let controller = storyboard.instantiateInitialViewController() as? MarkupViewController else {
             fatalError("Project fault - cant instantiate MarkupViewController from storyboard")
         }
+        // Instantiates delegate and markups
         controller.delegate = delegate
         controller.currentContent = markup
         return controller
     }
 }
 
+// Pins template and markup content view to inside of PluginView templateContainer
 extension MarkupViewController {
     
     func loadTemplate(_ content: MarkupDescription) {
@@ -109,6 +111,7 @@ extension MarkupViewController {
     }
 }
 
+// Assigns textField to the UITextFieldDelegate
 extension MarkupViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -120,6 +123,7 @@ extension MarkupViewController: UITextFieldDelegate {
         return true
     }
     
+    // Retrieves title and longDescription fields
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
         guard let template = currentContent else {
             return
@@ -139,11 +143,13 @@ extension MarkupViewController: UITextFieldDelegate {
     
 }
 
+//
 extension MarkupViewController: UIImagePickerControllerDelegate {
     public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true)
     }
     
+    // Image picker for current content in markup document
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         dismiss(animated: true)
         guard let template = currentContent else {
@@ -154,6 +160,7 @@ extension MarkupViewController: UIImagePickerControllerDelegate {
             if let error = error {
                 print("unable to get image from picker - \(error)")
             }
+                // Set image for current template
             else if let image = image {
                 template.image = image
                 currentContent = template
@@ -166,6 +173,7 @@ extension MarkupViewController: UINavigationControllerDelegate {
     //ImagingHelper conformance only
 }
 
+// Renders image in current content with specified dimensions
 extension MarkupViewController {
     
     @IBAction func shareAction(_ sender: UIButton) {
@@ -186,7 +194,7 @@ extension MarkupViewController {
     
 }
 
-
+// This handles retrieving document URL, loding the default document, and loading a specified (non-default) document
 extension MarkupViewController {
     
     func observeAppBackground() {

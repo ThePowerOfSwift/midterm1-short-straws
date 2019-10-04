@@ -11,6 +11,7 @@ import AVFoundation
 
 typealias ImageUIPresenter = UIViewController & UIImagePickerControllerDelegate
 
+//
 public class ImagingHelper: NSObject {
   
   let presenter: UIViewController & UIImagePickerControllerDelegate & UINavigationControllerDelegate
@@ -19,12 +20,14 @@ public class ImagingHelper: NSObject {
   private var cameraIsUserPermitted = false
   public var canPickImage = true
   
+
   public init(presenter: UIViewController & UIImagePickerControllerDelegate & UINavigationControllerDelegate, sourceview: UIView) {
     self.presenter = presenter
     self.sourceView = sourceview
     super.init()
   }
   
+    // Requests user permission to access camera or photo gallery
   public func pickImage() {
     requestPermission()
   }
@@ -64,15 +67,18 @@ private extension ImagingHelper {
     }
   }
   
+    // Prompts user to pick a source (camera or gallery)
   func chooseSource() {
     let chooser = UIAlertController(title: NSLocalizedString("Image Source", comment: ""), message:nil, preferredStyle: .actionSheet)
     chooser.modalPresentationStyle = .popover
     chooser.popoverPresentationController?.sourceView = sourceView
     
+    // Allows user to pick from photo gallery
     if canPickImage {
       chooser.addAction(UIAlertAction(title: NSLocalizedString("Photos", comment: ""), style: .default, handler: { (_) in
         self.displayPhotoPicker()
       }))
+        // Allows user to take photo for use in app
       if cameraIsUserPermitted  {
         chooser.addAction(UIAlertAction(title: NSLocalizedString("Camera", comment: ""), style: .default, handler: { (_) in
           self.displayCameraUI()
@@ -87,6 +93,7 @@ private extension ImagingHelper {
     presenter.present(chooser, animated: true, completion: nil)
   }
   
+    // Function to invoke photo picker as popover
   func displayPhotoPicker() {
     let imagePicker =  UIImagePickerController()
     imagePicker.delegate = presenter
@@ -95,7 +102,8 @@ private extension ImagingHelper {
     
     presenter.present(imagePicker, animated: true, completion: nil)
   }
-  
+
+    // Function to invoke camera UI 
   func displayCameraUI() {
     let cameraUI =  UIImagePickerController()
     cameraUI.delegate = presenter
