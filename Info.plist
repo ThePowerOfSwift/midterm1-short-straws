@@ -7,14 +7,14 @@
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
-			<key>LSItemContentTypes</key>
-			<array>
-				<string>com.adobe.pdf</string>
-			</array>
 			<key>CFBundleTypeName</key>
 			<string>PDF</string>
 			<key>LSHandlerRank</key>
 			<string>Default</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.adobe.pdf</string>
+			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeIconFiles</key>
@@ -49,9 +49,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>&quot;Markup would like to use your camera so you can add images&quot;</string>
+	<string>"Markup would like to use your camera so you can add images"</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>&quot;Markup would like to save created images to your photo library&quot;</string>
+	<string>"Markup would like to save created images to your photo library"</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

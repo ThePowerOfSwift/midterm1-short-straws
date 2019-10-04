@@ -103,14 +103,14 @@ extension DocumentBrowserViewController {
   
   func openDocument(url: URL) {
     
-    // 1
+   
     guard isDocumentCurrentlyOpen(url: url) == false else {
       return
     }
     
-    if(url.pathExtension == ".pdf") {
+    if(url.pathExtension == "pdf") {
         closePDFController {
-            // 2
+            
             let document = PDFDocument(url: url)
               self.otherDocument = document
               self.displayPDFController()
@@ -119,7 +119,7 @@ extension DocumentBrowserViewController {
 
     else {
     closeMarkupController {
-      // 2
+     
       let document = MarkupDocument(fileURL: url)
       document.open { openSuccess in
         guard openSuccess else {

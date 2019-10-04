@@ -24,7 +24,6 @@ class PDFViewController: UIViewController {
         
         pdfView.autoScales = true
         
-        // Load Sample.pdf file from app bundle.
         pdfView.document = document
     }
 }
