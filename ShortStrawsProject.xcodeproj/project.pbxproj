@@ -11,7 +11,6 @@
 		3742CF7F2341065A00B05D41 /* MarkupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742CF7E2341065A00B05D41 /* MarkupViewController.swift */; };
 		37551BDC23405A9E00DEAF87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BDB23405A9E00DEAF87 /* AppDelegate.swift */; };
 		37551BDE23405A9E00DEAF87 /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BDD23405A9E00DEAF87 /* DocumentBrowserViewController.swift */; };
-		37551BE023405A9E00DEAF87 /* DocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BDF23405A9E00DEAF87 /* DocumentView.swift */; };
 		37551BE523405A9E00DEAF87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37551BE323405A9E00DEAF87 /* Main.storyboard */; };
 		37551BF823406BC200DEAF87 /* ImagingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BF723406BC200DEAF87 /* ImagingHelper.swift */; };
 		37551BFA23406C0A00DEAF87 /* ImagingHelper+ResourceLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551BF923406C0A00DEAF87 /* ImagingHelper+ResourceLoad.swift */; };
@@ -76,7 +75,6 @@
 		37551BD823405A9E00DEAF87 /* ShortStrawsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortStrawsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37551BDB23405A9E00DEAF87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37551BDD23405A9E00DEAF87 /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
-		37551BDF23405A9E00DEAF87 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
 		37551BE423405A9E00DEAF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37551BF723406BC200DEAF87 /* ImagingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagingHelper.swift; sourceTree = "<group>"; };
 		37551BF923406C0A00DEAF87 /* ImagingHelper+ResourceLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagingHelper+ResourceLoad.swift"; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				37551BDD23405A9E00DEAF87 /* DocumentBrowserViewController.swift */,
-				37551BDF23405A9E00DEAF87 /* DocumentView.swift */,
 				37551BFF23406E8700DEAF87 /* DocumentBrowserDelegate.swift */,
 			);
 			path = "UIDocument Mechanics";
@@ -312,7 +309,6 @@
 				37551C03234070CA00DEAF87 /* MarkupDocument.swift in Sources */,
 				37551BDE23405A9E00DEAF87 /* DocumentBrowserViewController.swift in Sources */,
 				37551C05234070F700DEAF87 /* RootViewController.swift in Sources */,
-				37551BE023405A9E00DEAF87 /* DocumentView.swift in Sources */,
 				37551BFA23406C0A00DEAF87 /* ImagingHelper+ResourceLoad.swift in Sources */,
 				37551BF823406BC200DEAF87 /* ImagingHelper.swift in Sources */,
 				37551C0023406E8700DEAF87 /* DocumentBrowserDelegate.swift in Sources */,
