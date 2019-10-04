@@ -2,8 +2,8 @@
 //  PDFViewController.swft.swift
 //  ShortStrawsProject
 //
-//  Created by Morgan Martin on 10/3/19.
-//  Copyright © 2019 Greg Schloemer. All rights reserved
+//  Created by Team 1 - Short Straws for Midterm 1 in CS 485G
+//  This file was adapted from the tutorial at https://www.raywenderlich.com/5244-document-based-apps-tutorial-getting-started
 
 import UIKit
 import PDFKit
