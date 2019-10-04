@@ -30,8 +30,8 @@ class PDFViewController: UIViewController {
 extension PDFViewController {
     static func freshController(document:PDFDocument? , delegate: PDFViewControllerDelegate? = nil) -> PDFViewController {
     let storyboard = UIStoryboard(name: "PDFViewController", bundle: nil)
-    guard let controller = storyboard.instantiateInitialViewController() as? PDFViewController else {
-      fatalError("Project fault - cant instantiate MarkupViewController from storyboard")
+        guard let controller = storyboard.instantiateInitialViewController() as? PDFViewController else {
+      fatalError("Project fault - cant instantiate PDFViewController from storyboard")
     }
     controller.delegate = delegate
     controller.document = document
