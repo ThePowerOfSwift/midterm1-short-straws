@@ -3,13 +3,13 @@
 //  ShortStrawThumbnail
 //
 //  Created by  on 9/30/19.
-//  Copyright © 2019 Greg Schloemer. All rights reserved.
-//
-
+//  Created by Team 1 - Short Straws for Midterm 1 in CS 485G
+//  This file was adapted from the tutorial at https://www.raywenderlich.com/5244-document-based-apps-tutorial-getting-started
 import UIKit
 import QuickLookThumbnailing
 import MarkupFramework
 
+// 
 class ThumbnailProvider: QLThumbnailProvider {
     
     override func provideThumbnail(for request: QLFileThumbnailRequest, _ handler: @escaping (QLThumbnailReply?, Error?) -> Void)
