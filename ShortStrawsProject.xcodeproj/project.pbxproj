@@ -24,6 +24,7 @@
 		37EEF23323414A9F0039811B /* MarkupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EEF23223414A9F0039811B /* MarkupViewController.storyboard */; };
 		37EEF24B23414FA80039811B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EEF24923414FA80039811B /* Assets.xcassets */; };
 		37EEF24C23414FA80039811B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EEF24A23414FA80039811B /* Colors.xcassets */; };
+		54FE624F2347FD28002856BE /* PDFViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FE624E2347FD28002856BE /* PDFViewController.storyboard */; };
 		674E78452346C9A600E56DF6 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674E78442346C9A600E56DF6 /* PDFViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		37EEF24823414EBF0039811B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		37EEF24923414FA80039811B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37EEF24A23414FA80039811B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		54FE624E2347FD28002856BE /* PDFViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PDFViewController.storyboard; sourceTree = "<group>"; };
 		674E78442346C9A600E56DF6 /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		6FC648AC23426130005437A8 /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -162,6 +164,7 @@
 				37551C04234070F700DEAF87 /* RootViewController.swift */,
 				37551BE323405A9E00DEAF87 /* Main.storyboard */,
 				674E78442346C9A600E56DF6 /* PDFViewController.swift */,
+				54FE624E2347FD28002856BE /* PDFViewController.storyboard */,
 			);
 			path = "Primary Views";
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				37EEF23323414A9F0039811B /* MarkupViewController.storyboard in Resources */,
 				3742CF7A234104B500B05D41 /* Default-568h@2x.png in Resources */,
 				37EEF24B23414FA80039811B /* Assets.xcassets in Resources */,
+				54FE624F2347FD28002856BE /* PDFViewController.storyboard in Resources */,
 				37551BE523405A9E00DEAF87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,7 +452,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4A9CLK2HY3;
+				DEVELOPMENT_TEAM = 4VZ857S9H8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -458,7 +462,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ukyasdas;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uky.cs485g-ss.ldri225.ShortStrawsProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,7 +475,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4A9CLK2HY3;
+				DEVELOPMENT_TEAM = 4VZ857S9H8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -481,7 +485,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ukyasdas;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.uky.cs485g-ss.ldri225.ShortStrawsProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
