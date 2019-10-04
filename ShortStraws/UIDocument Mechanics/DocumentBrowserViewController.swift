@@ -8,10 +8,12 @@
 
 import UIKit
 import MarkupFramework
+import PDFKit
 
 class DocumentBrowserViewController: UIViewController {
   var browserDelegate = DocumentBrowserDelegate()
   var currentDocument: MarkupDocument?
+  var otherDocument: PDFDocument?
   var editingDocument = false
   lazy var documentBrowser: UIDocumentBrowserViewController = {
     let browser = UIDocumentBrowserViewController()
@@ -106,7 +108,16 @@ extension DocumentBrowserViewController {
       return
     }
     
-    
+    if(url.pathExtension == ".pdf") {
+        closePDFController {
+            // 2
+            let document = PDFDocument(url: url)
+              self.otherDocument = document
+              self.displayPDFController()
+            }
+          }
+
+    else {
     closeMarkupController {
       // 2
       let document = MarkupDocument(fileURL: url)
@@ -119,6 +130,7 @@ extension DocumentBrowserViewController {
       }
     }
   }
+}
 
   // 3
   private func isDocumentCurrentlyOpen(url: URL) -> Bool {
@@ -141,5 +153,50 @@ extension DocumentBrowserViewController {
       }
     }
   }
+}
+extension DocumentBrowserViewController: PDFViewControllerDelegate{
+
+  // 1
+  func displayPDFController() {
+    
+    guard !editingDocument, let document = otherDocument else {
+      return
+    }
+    
+    editingDocument = true
+    let controller = PDFViewController.freshController(document:document, delegate: self)
+    present(controller, animated: true)
+  }
+  
+  // 2
+  func closePDFController(completion: (() -> Void)? = nil) {
+    
+    let compositeClosure = {
+      self.closeCurrentDocument()
+      self.editingDocument = false
+      completion?()
+    }
+    
+    if editingDocument {
+      dismiss(animated: true) {
+        compositeClosure()
+      }
+    } else {
+      compositeClosure()
+    }
+  }
+
+  
+  // 3
+    func PDFEditorDidFinishEditing(_ controller: PDFViewController, document:PDFDocument) {
+    otherDocument = document
+    closePDFController()
+  }
+   
+  // 4
+    func PDFEditorDidUpdateContent(_ controller: PDFViewController, document:PDFDocument) {
+    otherDocument = document
+  }
+  
 }
 
